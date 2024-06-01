@@ -8,4 +8,79 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="DotNetZip" Version="1.16.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Forms\CreateProfileForm\CreateProfileFormResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CreateProfileFormResource.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Forms\MainForm\MainFormResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MainFormResource.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Forms\MainForm\MenuStripResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MenuStripResource.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Forms\MainForm\TabContent\TabContentResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TabContentResource.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Forms\MainForm\TabContent\LauncherInfoTabResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LauncherInfoTabResource.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Forms\MainForm\TabContent\ServerInfoTabResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ServerInfoTabResource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Forms\CreateProfileForm\CreateProfileFormResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CreateProfileFormResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Forms\MainForm\MainFormResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MainFormResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Forms\MainForm\MenuStripResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MenuStripResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Forms\MainForm\TabContent\TabContentResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TabContentResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Forms\MainForm\TabContent\LauncherInfoTabResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LauncherInfoTabResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Forms\MainForm\TabContent\ServerInfoTabResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ServerInfoTabResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Content\Templates\ikaprofiler.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
