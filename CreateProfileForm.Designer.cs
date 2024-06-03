@@ -22,20 +22,10 @@ namespace playtarky
             }
             base.Dispose(disposing);
         }
-        public string ProfileName
-        {
-            get { return "test"; }// textBoxUsername.Text; }
-        }
-
-        public bool UsesFika
-        {
-            get { return true; }// checkBoxOnlineOnly.Checked; }
-        }
-
-        public bool WillHostFika
-        {
-            get { return true; }// checkBoxOnlineOnly.Checked; }
-        }
+        public static string ProfileName;
+        public static bool UsesFika;
+        public static bool IsFikaHost;
+        public static bool IsOverwriteProfile;
 
         #region Windows Form Designer generated code
 
@@ -45,6 +35,7 @@ namespace playtarky
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateProfileForm));
             label1 = new Label();
             CP_ProfileName_txt = new TextBox();
@@ -54,61 +45,47 @@ namespace playtarky
             CP_Cancel_btn = new Button();
             groupBox1 = new GroupBox();
             CP_fika_help_btn = new Button();
+            CP_fika_help_btn_tt = new ToolTip(components);
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 9);
+            resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
-            label1.Size = new Size(76, 15);
-            label1.TabIndex = 1;
-            label1.Text = "Profile Name";
             // 
             // CP_ProfileName_txt
             // 
-            CP_ProfileName_txt.Location = new Point(12, 27);
+            resources.ApplyResources(CP_ProfileName_txt, "CP_ProfileName_txt");
             CP_ProfileName_txt.Name = "CP_ProfileName_txt";
-            CP_ProfileName_txt.Size = new Size(319, 23);
-            CP_ProfileName_txt.TabIndex = 2;
             // 
             // CP_UsesFika_chk
             // 
-            CP_UsesFika_chk.AutoSize = true;
-            CP_UsesFika_chk.Location = new Point(17, 22);
+            resources.ApplyResources(CP_UsesFika_chk, "CP_UsesFika_chk");
             CP_UsesFika_chk.Name = "CP_UsesFika_chk";
-            CP_UsesFika_chk.Size = new Size(135, 19);
-            CP_UsesFika_chk.TabIndex = 3;
             CP_UsesFika_chk.Text = CreateProfileFormResource.UsesFika;
             CP_UsesFika_chk.UseVisualStyleBackColor = true;
+            CP_UsesFika_chk.CheckedChanged += CP_UsesFika_chk_CheckedChanged;
             // 
             // CP_IsFikaHost_chk
             // 
-            CP_IsFikaHost_chk.AutoSize = true;
-            CP_IsFikaHost_chk.Location = new Point(17, 47);
+            resources.ApplyResources(CP_IsFikaHost_chk, "CP_IsFikaHost_chk");
             CP_IsFikaHost_chk.Name = "CP_IsFikaHost_chk";
-            CP_IsFikaHost_chk.Size = new Size(156, 19);
-            CP_IsFikaHost_chk.TabIndex = 4;
             CP_IsFikaHost_chk.Text = CreateProfileFormResource.IsFikaHost;
             CP_IsFikaHost_chk.UseVisualStyleBackColor = true;
             // 
             // CP_Create_btn
             // 
-            CP_Create_btn.Location = new Point(175, 137);
+            resources.ApplyResources(CP_Create_btn, "CP_Create_btn");
             CP_Create_btn.Name = "CP_Create_btn";
-            CP_Create_btn.Size = new Size(75, 23);
-            CP_Create_btn.TabIndex = 5;
             CP_Create_btn.Text = CreateProfileFormResource.Create;
             CP_Create_btn.UseVisualStyleBackColor = true;
             CP_Create_btn.Click += CP_Create_btn_Click;
             // 
             // CP_Cancel_btn
             // 
-            CP_Cancel_btn.Location = new Point(256, 137);
+            resources.ApplyResources(CP_Cancel_btn, "CP_Cancel_btn");
             CP_Cancel_btn.Name = "CP_Cancel_btn";
-            CP_Cancel_btn.Size = new Size(75, 23);
-            CP_Cancel_btn.TabIndex = 6;
             CP_Cancel_btn.Text = CreateProfileFormResource.Cancel;
             CP_Cancel_btn.UseVisualStyleBackColor = true;
             // 
@@ -117,35 +94,30 @@ namespace playtarky
             groupBox1.Controls.Add(CP_fika_help_btn);
             groupBox1.Controls.Add(CP_UsesFika_chk);
             groupBox1.Controls.Add(CP_IsFikaHost_chk);
-            groupBox1.Location = new Point(12, 56);
+            resources.ApplyResources(groupBox1, "groupBox1");
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(319, 75);
-            groupBox1.TabIndex = 7;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Fika Compatibility";
             // 
             // CP_fika_help_btn
             // 
             CP_fika_help_btn.Cursor = Cursors.Help;
-            CP_fika_help_btn.Image = (Image)resources.GetObject("CP_fika_help_btn.Image");
-            CP_fika_help_btn.Location = new Point(283, 15);
+            resources.ApplyResources(CP_fika_help_btn, "CP_fika_help_btn");
             CP_fika_help_btn.Name = "CP_fika_help_btn";
-            CP_fika_help_btn.Size = new Size(30, 30);
-            CP_fika_help_btn.TabIndex = 5;
+            CP_fika_help_btn_tt.SetToolTip(CP_fika_help_btn, CreateProfileFormResource.FikaHelp);
             CP_fika_help_btn.UseVisualStyleBackColor = true;
-            ToolTip CP_fika_help_btn_tt = new ToolTip();
+            // 
+            // CP_fika_help_btn_tt
+            // 
             CP_fika_help_btn_tt.AutoPopDelay = 5000;
             CP_fika_help_btn_tt.InitialDelay = 100;
-            CP_fika_help_btn_tt.ShowAlways = false;
-            CP_fika_help_btn_tt.SetToolTip(CP_fika_help_btn, CreateProfileFormResource.FikaHelp);
+            CP_fika_help_btn_tt.ReshowDelay = 100;
             // 
             // CreateProfileForm
             // 
             AcceptButton = CP_Create_btn;
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = CP_Cancel_btn;
-            ClientSize = new Size(337, 168);
             ControlBox = false;
             Controls.Add(groupBox1);
             Controls.Add(CP_Cancel_btn);
@@ -157,7 +129,6 @@ namespace playtarky
             MinimizeBox = false;
             Name = "CreateProfileForm";
             ShowIcon = false;
-            Text = "Create New Profile";
             TopMost = true;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -174,5 +145,6 @@ namespace playtarky
         private Button CP_Cancel_btn;
         private GroupBox groupBox1;
         private Button CP_fika_help_btn;
+        private ToolTip CP_fika_help_btn_tt;
     }
 }

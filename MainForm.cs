@@ -3,13 +3,16 @@ using Newtonsoft.Json;
 using playtarky.Models;
 using playtarky.Resources.Forms.MainForm;
 using playtarky.Utils;
-using System;
 using System.Diagnostics;
 
 namespace playtarky
 {
     public partial class MainForm : Form
     {
+        //step 1 is actually profile handling, export/import for server/client and all them ip/port configs.
+        //step 2 is to actually drag drop mods, see diffs from profile to game live
+        //step 3 is to modify their config
+        //step 4 is to actually be able to have a mod database from spt, with link to them and be able to download and install from the app.
         //TODO: err and not load if install is not found
         //TODO: Export client config without server stuff, fika required.
         //TODO: Normalize gamedir
@@ -20,19 +23,22 @@ namespace playtarky
         //TODO: Aki_Data\Server\configs.core.json display spt version
         //TODO: user\mods\fika-server\package.json display fika server version
         //TODO: Help with disclaimer, links to fika and spt mods.
+        //TODO: Message on load if profile not found, unselect profile and run app profileless.
+        //TODO: PAD (exists/conditions) EVERY FILE HANDLING
+        //TODO: Divide methods into classes.
+        //TODO: Implement Dirty state
+        //TODO: NOTHING CAN BE DONE WITHOUT AN ACTIVE PROFILE LOADED
+        //TODO: No active profile = nothing enabled.
 
-        //public List<string> profile_list = [];
-        public AppConfiguration appConfig = new AppConfiguration();
-        public bool active_profile_loaded = false;
-
-        //GAME DIRS
+        public AppConfiguration? _app_config = null;
+        public ProfileConfiguration? _active_Profile = null;
 
 
-        #if DEBUG
+#if DEBUG
         public const string GAME_DIR = @"C:\SPT\";
-        #else
+#else
         public const string GAME_DIR = @".\";
-        #endif
+#endif
 
         public const string GAME_PLUGINS_DIR_PARTIAL = @"BepInEx\plugins";
         public const string GAME_PLUGINS_DIR = $"{GAME_DIR}{GAME_PLUGINS_DIR_PARTIAL}";
@@ -63,37 +69,30 @@ namespace playtarky
         public const string APP_CONFIG_FILENAME = "ikaprofiler.config.json";
         public const string APP_CONFIG_FILE = @$"{APP_PROFILES_DIR}\{APP_CONFIG_FILENAME}";
 
-        public const string PROFILE_CONFIG_FILENAME = "ikaprofiler.profile.config.json";
-
-        private System.Windows.Forms.Timer? CloseTimer;
-        
+        public const string PROFILE_CONFIG_FILENAME = "ikaprofiler.profile.json";
+        public const string CRASH_DUMP_PATH = @$"{GAME_DIR}ikaprofiler.crash.log.txt";
 
         public MainForm()
         {
+            InitializeComponent();
+        }
+
+        private async void MainForm_Shown(object sender, EventArgs e)
+        {
             try
             {
-                //All GUI stuff.
-                InitializeComponent();
-                //First run, cleanup and first time profile creation.
-                if (!InitializeProgram())
-                {
-                    InitializeTabBep();
-                    InitializeTabUser();
-                    InitializeTabServer();
-                    InitializeTabLauncher();
-                    InitializeTabProfiles();
+                await InitializeProgram();
+                InitializeTabBep();
+                InitializeTabUser();
+                InitializeTabServer();
 
-                    Toggle_Field_For_Profile_Activity(active_profile_loaded);
-                }
-                else
-                {
-                    ForceCloseApplication();
-                };
+                InitializeTabLauncher();
+                InitializeTabProfiles();
             }
             catch (Exception ex)
             {
                 CreateErrorDump(ex, MainFormResource.Error);
-                ForceCloseApplication();
+                Application.Exit();
             }
         }
 
@@ -101,63 +100,79 @@ namespace playtarky
         /// <summary>
         /// Saves json configuration to filesystem
         /// </summary>
-        private void SaveConfiguration()
+        /// <param name="isActive">Pass a config to save (Optional)</param>
+        private void SaveConfiguration(AppConfiguration? ac = null)
         {
+            if (ac != null) _app_config = ac;
             // Serialize the object to JSON string
-            string jsonString = JsonConvert.SerializeObject(appConfig);
+            string jsonString = JsonConvert.SerializeObject(_app_config);
 
             // Write the JSON string to the file
             File.WriteAllText(APP_CONFIG_FILE, jsonString);
+        }
 
+        private void LoadConfiguration()
+        {
+            string jsonText = File.ReadAllText(APP_CONFIG_FILE);
+            _app_config = JsonConvert.DeserializeObject<AppConfiguration>(jsonText);
         }
         #endregion
 
         /// <summary>
         /// Cleanup crash files, initialize configuration file and handles first run.
         /// </summary>
-        private bool InitializeProgram()
+        private async Task InitializeProgram()
         {
-            var ForceClose = false;
             //Add empty profile to the open menu just to allow the arrow to be visible.
-            openProfileToolStripMenuItem.DropDownItems.Add(new ToolStripMenuItem(MenuStripResource.Empty) { Enabled = false });
+            menu_openprofile_lbl.DropDownItems.Add(new ToolStripMenuItem(MenuStripResource.Empty) { Enabled = false });
 
             //Detect Tarkov
-            if (!File.Exists(Path.Combine(GAME_DIR, TARKOV_FILE))){
+            if (!File.Exists(Path.Combine(GAME_DIR, TARKOV_FILE)))
+            {
                 MessageBox.Show(MainFormResource.TarkovNotFound, MainFormResource.StatusNotFound);
-                ForceClose = true;
+                Application.Exit();
             }
 
             //Detect SPT
-            if (!File.Exists(Path.Combine(GAME_DIR, AKI_LAUNCHER_FILE))){
-                MessageBox.Show(MainFormResource.SPTNotFound, MainFormResource.StatusNotFound);
-                ForceClose= true;
-            }
-
-            if (!ForceClose)
+            if (!File.Exists(Path.Combine(GAME_DIR, AKI_LAUNCHER_FILE)))
             {
-                //First run
-                if (!Directory.Exists(APP_PROFILES_DIR))
+                MessageBox.Show(MainFormResource.SPTNotFound, MainFormResource.StatusNotFound);
+                Application.Exit();
+            }
+
+
+            //First run
+            if (!Directory.Exists(APP_PROFILES_DIR))
+            {
+                Directory.CreateDirectory(APP_PROFILES_DIR);
+                File.WriteAllText(APP_CONFIG_FILE, JsonConvert.SerializeObject(new AppConfiguration()));
+            }
+
+            //purge any tmp bck files if app crashed.
+            foreach (string file in Directory.GetFiles(APP_PROFILES_DIR, "*.tmp")) File.Delete(file);
+            foreach (string file in Directory.GetFiles(APP_PROFILES_DIR, "*.bck")) File.Delete(file);
+
+            //If no profile, ask user to create one.
+            var profiles = GetProfiles();
+            if (profiles == null || profiles.Count == 0)
+            {
+                DialogResult result = MessageBox.Show(MainFormResource.NoProfileFoundCreateQ, MainFormResource.NoProfileFound);
+
+                if (result == DialogResult.Yes)
                 {
-                    Directory.CreateDirectory(APP_PROFILES_DIR);
-                    File.WriteAllText(APP_CONFIG_FILE, JsonConvert.SerializeObject(new AppConfiguration()));
-                }
-
-                //purge any tmp files if app crashed.
-                foreach (string file in Directory.GetFiles(APP_PROFILES_DIR, "*.tmp")) File.Delete(file);
-
-                //If no profile, ask user to create one.
-                var profiles = GetProfiles();
-                if (profiles == null || profiles.Count == 0)
-                {
-                    DialogResult result = MessageBox.Show(MainFormResource.NoProfileFoundCreateQ, MainFormResource.NoProfileFound, MessageBoxButtons.YesNo);
-
-                    if (result == DialogResult.Yes)
-                    {
-                        CreateNewProfileModal();
-                    }
+                    CreateNewProfileModal();
                 }
             }
-            return ForceClose;
+
+            if (_app_config == null)
+            {
+                LoadConfiguration();
+            }
+
+            if (_active_Profile == null)
+            {
+                LoadActiveProfile();
+            }
         }
 
         #region Tab BepExIn
@@ -357,9 +372,10 @@ namespace playtarky
         private void OpenProfileItem_Click(object sender, EventArgs e, string menuItemText)
         {
             //TODO: If clicked on same profile, do nothing
-            //TODO: Ask if they want to save current profile before
+            //TODO: check if dirty, if so, tell them.
+            LoadProfile(menuItemText);
             //TODO: Load profile
-            MessageBox.Show("Clicked: " + menuItemText);
+
         }
 
         /// <summary>
@@ -372,6 +388,11 @@ namespace playtarky
             InitializeMenuProfiles();
         }
 
+        private void saveProfileAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CreateNewProfileModal();
+        }
+
         /// <summary>
         /// Loads profiles for menu strip dynamically
         /// </summary>
@@ -379,30 +400,20 @@ namespace playtarky
         {
             var list = GetProfiles(true);
 
-            openProfileToolStripMenuItem.DropDownItems.Clear();
+            menu_openprofile_lbl.DropDownItems.Clear();
             foreach (var profile in list)
             {
                 ToolStripMenuItem toolStripMenuItem = new ToolStripMenuItem(profile);
                 //Attach their own event to load
                 toolStripMenuItem.Click += (sender, e) => OpenProfileItem_Click(sender, e, profile);
-                openProfileToolStripMenuItem.DropDownItems.Add(toolStripMenuItem);
+                menu_openprofile_lbl.DropDownItems.Add(toolStripMenuItem);
             }
 
             //If no profiles, just make it an empty list
             if (list.Count == 0)
             {
-                openProfileToolStripMenuItem.DropDownItems.Add(new ToolStripMenuItem(MenuStripResource.Empty) { Enabled = false });
+                menu_openprofile_lbl.DropDownItems.Add(new ToolStripMenuItem(MenuStripResource.Empty) { Enabled = false });
             }
-        }
-
-        /// <summary>
-        /// Create a new profile from a "Create" link in the menu strip
-        /// </summary>
-        /// <param name="sender">event sender control</param>
-        /// <param name="e">event</param>
-        private void createProfileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CreateNewProfileModal();
         }
         #endregion
 
@@ -416,7 +427,7 @@ namespace playtarky
             saveProfileToolStripMenuItem.Enabled = isActive; //Inactive if no profile loaded
 
             //Bep Tab
-            bep_tab_profilefile_lbl.Enabled = isActive;
+            tab_bep_profilefiles_lbl.Enabled = isActive;
             bep_tab_profilefiles_lbox.Enabled = isActive;
             bep_tab_openprofilefile_btn.Enabled = isActive;
             bep_tab_importselected_btn.Enabled = isActive;
@@ -482,31 +493,29 @@ namespace playtarky
         /// <summary>
         /// Create the modal for a new profile creation
         /// </summary>
-        public void CreateNewProfileModal()
+        public async Task CreateNewProfileModal()
         {
-            //TODO
             CreateProfileForm newProfileForm = new CreateProfileForm();
             if (newProfileForm.ShowDialog() == DialogResult.OK)
             {
-                //TODO: create the profile.
-                var moo = newProfileForm.ProfileName;
-                var hello = "haha";
-            }
-            else
-            {
-                var moo = "";
-            }
+                var profileName = CreateProfileForm.ProfileName;
+                var usesFika = CreateProfileForm.UsesFika;
+                var isFikaHost = CreateProfileForm.IsFikaHost;
+                var isOverwriteProfile = CreateProfileForm.IsOverwriteProfile;
+                await SaveNewProfile(profileName, new ProfileConfiguration
+                {
+                    IsFikaHost = isFikaHost,
+                    UseFika = usesFika
+                }, isOverwriteProfile);
 
-            //TODO: Ask if user wants to use said profile.
-            //LoadProfile(name);
-            //DialogResult result = MessageBox.Show("No profile has been found. Would you like to you create one with the current game data?", "No profile found", MessageBoxButtons.YesNo);
+                DialogResult result = MessageBox.Show(string.Format(MainFormResource.ActivateProfileText, profileName), MainFormResource.ActivateProfileTitle, MessageBoxButtons.YesNo);
 
-            //if (result == DialogResult.Yes)
-            //{
-            //    appConfig.ActiveProfile = "TestCharlesErere";
-            //    SaveConfiguration();
-            //    LoadActiveProfile();
-            //}
+                if (result == DialogResult.Yes)
+                {
+                    SaveConfiguration(new AppConfiguration() { ActiveProfile = profileName });
+                    LoadActiveProfile();
+                }
+            }
         }
 
         /// <summary>
@@ -514,16 +523,30 @@ namespace playtarky
         /// </summary>
         /// <param name="profileName">Profile to Create</param>
         /// <param name="config">Config to save with the profile</param>
-        public async void SaveNewProfile(string profileName, ProfileConfiguration config)
+        /// <param name="replaceProfile">replace the existing profile with a new one</param>
+        public async Task SaveNewProfile(string profileName, ProfileConfiguration config, bool replaceProfile = false)
         {
+            //TODO: Implement Replace Profile
+            //TODO: Replace profile needs to backup existing, stage the new one and delete the backup if succeed, or restore if failed.
             try
             {
                 //Disables the form while the creation process is enabled
-                this.Enabled = false;
-                this.Cursor = Cursors.WaitCursor;
+                this.BeginInvoke((MethodInvoker)delegate
+                {
+                    this.Enabled = false;
+                    this.Cursor = Cursors.WaitCursor;
+                });
+
+
+                var profileDir = @$"{APP_PROFILES_DIR}\{profileName}";
+
+                //backup existing profile
+                if (replaceProfile)
+                {
+                    File.Move($"{profileDir}.zip", $"{profileDir}.zip.bck");
+                }
 
                 //Create staging folder
-                var profileDir = @$"{APP_PROFILES_DIR}\{profileName}";
                 Directory.CreateDirectory(profileDir);
 
                 //Initiates the progress
@@ -566,28 +589,59 @@ namespace playtarky
                 //Delete staging folder
                 Directory.Delete(profileDir, true);
 
-                //Update progress
-                progressBar.Value = 100;
-                progressStatusText.Text = string.Format(MainFormResource.ProfileCreated, profileDir);
+                //Delete old existing profile
+                if (replaceProfile)
+                {
+                    File.Delete($"{profileDir}.zip.bck");
+                }
 
-                //enables the form again
-                this.Enabled = true;
+                //Update progress
+                if (this.IsHandleCreated)
+                {
+                    this.BeginInvoke((MethodInvoker)delegate
+                    {
+                        progressBar.Value = 100;
+                        progressStatusText.Text = string.Format(MainFormResource.ProfileCreated, $"{profileDir}.zip");
+                    });
+                }
+                else
+                {
+                    progressBar.Value = 100;
+                    progressStatusText.Text = string.Format(MainFormResource.ProfileCreated, profileDir);
+                }
             }
             catch (Exception ex)
             {
                 //Purge failed profile, zip and any tmp file left from process if any.
                 var profileDir = @$"{APP_PROFILES_DIR}\{profileName}";
-                Directory.Delete(profileDir, true);
-                File.Delete($"{profileDir}.zip");
+                if (Directory.Exists(profileDir))
+                {
+                    Directory.Delete(profileDir, true);
+                }
+
+                if (File.Exists($"{profileDir}.zip"))
+                {
+                    File.Delete($"{profileDir}.zip");
+                }
+
                 foreach (string file in Directory.GetFiles(APP_PROFILES_DIR, "*.tmp")) File.Delete(file);
+
+                //restore existing profile
+                if (replaceProfile)
+                {
+                    File.Move($"{profileDir}.zip.bck", $"{profileDir}.zip");
+                }
 
                 //Dump Error
                 CreateErrorDump(ex, MainFormResource.ErrorCreatingProfile);
             }
             finally
             {
-                this.Cursor = Cursors.Default;
-                this.Enabled = true;
+                this.Invoke((MethodInvoker)delegate
+                {
+                    this.Enabled = true;
+                    this.Cursor = Cursors.Default;
+                });
             }
         }
 
@@ -597,7 +651,7 @@ namespace playtarky
         /// <param name="WithoutExtension">returns the list without ".zip"</param>
         /// <returns>list of profiles</returns>
         private List<string> GetProfiles(bool WithoutExtension = false)
-        {
+        { 
             var profile_list = new List<string>();
             foreach (var profile in Directory.GetFiles(APP_PROFILES_DIR, "*.zip"))
             {
@@ -613,8 +667,53 @@ namespace playtarky
         /// </summary>
         private void LoadActiveProfile()
         {
-            //TODO: Load Tabs
-            Toggle_Field_For_Profile_Activity(true);
+            //check if profile exists. 
+            if (!string.IsNullOrWhiteSpace(_app_config.ActiveProfile))
+            {
+                LoadProfile(_app_config.ActiveProfile, true);
+            }
+        }
+
+        public void LoadProfile(string profileName, bool isAutoActiveProfile = false)
+        {
+            var isprofileOk = false;
+            var path = $"{Path.Combine(APP_PROFILES_DIR, profileName)}.zip";
+            isprofileOk = File.Exists(path);
+            if (isprofileOk)
+            {
+                //Check if contains profile file.
+                using ZipFile zip = ZipFile.Read(path);
+                isprofileOk = false;
+                foreach (ZipEntry entry in zip)
+                {
+                    if (entry.FileName == PROFILE_CONFIG_FILENAME)
+                    {
+                        using MemoryStream stream = new();
+                        entry.Extract(stream);
+                        stream.Seek(0, SeekOrigin.Begin);
+
+                        using StreamReader reader = new(stream);
+                        string jsonContent = reader.ReadToEnd();
+                        _active_Profile = JsonConvert.DeserializeObject<ProfileConfiguration>(jsonContent);
+                        _app_config.ActiveProfile = profileName;
+                        MF_profileloaded_txt.Text = profileName;
+                        SaveConfiguration();
+                        isprofileOk = true;
+                        progressBar.Value = 100;
+                        progressStatusText.Text = string.Format(MainFormResource.ProfileLoaded, profileName);
+                    }
+                }
+            }
+            else
+            {
+                var title = isAutoActiveProfile ? MainFormResource.ActiveProfileMissingTitle : MainFormResource.ProfileCorruptedTitle;
+                var message = isAutoActiveProfile ? MainFormResource.ActiveProfileMissingMsg : MainFormResource.ProfileCorruptedMsg;
+                MessageBox.Show(string.Format(message, profileName), title);
+                progressBar.Value = 0;
+                progressStatusText.Text = string.Format(MainFormResource.ProfileCorruptedProgressMsg, profileName);
+            }
+
+            Toggle_Field_For_Profile_Activity(isprofileOk);
         }
         #endregion
 
@@ -650,12 +749,12 @@ namespace playtarky
         /// <param name="title">Title of the error modal</param>
         private void CreateErrorDump(Exception ex, string title)
         {
-            string logFilePath = @$"{GAME_DIR}crash.log.txt";
+
             string osVersion = Environment.OSVersion.VersionString;
             Version appVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
 
             // Write the error details to the file
-            using (StreamWriter writer = new StreamWriter(logFilePath))
+            using (StreamWriter writer = new StreamWriter(CRASH_DUMP_PATH))
             {
                 writer.WriteLine("OS Version: " + osVersion);
                 writer.WriteLine($"Application Version: {appVersion}");
@@ -693,7 +792,7 @@ namespace playtarky
                 foreach (string dir in GetDirectoryListing(APP_PROFILES_DIR)) writer.WriteLine(dir);
             }
 
-            MessageBox.Show($"{MainFormResource.ErrorCAPS}\n{ex.Message}\n\n{MainFormResource.CrashReportCreated}\n{logFilePath}", title);
+            MessageBox.Show($"{MainFormResource.ErrorCAPS}\n{ex.Message}\n\n{MainFormResource.CrashReportCreated}\n{CRASH_DUMP_PATH}", title);
 
             //Make sure the form window is back enabled
             progressBar.Value = 0;
@@ -712,29 +811,5 @@ namespace playtarky
             return listing;
         }
         #endregion
-
-        /// <summary>
-        /// Workaround for closing the app if the form is not loaded yet
-        /// </summary>
-        private void ForceCloseApplication()
-        {
-            CloseTimer = new System.Windows.Forms.Timer
-            {
-                Interval = 1
-            };
-            CloseTimer.Tick += CloseApplication;
-            CloseTimer.Start();
-        }
-
-        /// <summary>
-        /// Close app from timer
-        /// </summary>
-        /// <param name="sender">N/A</param>
-        /// <param name="e">N/A</param>
-        private void CloseApplication(object sender, EventArgs e)
-        {
-            CloseTimer.Stop();
-            Application.Exit();
-        }
     }
 }

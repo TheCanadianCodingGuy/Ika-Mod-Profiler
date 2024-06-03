@@ -124,6 +124,15 @@ namespace playtarky.Resources.Forms.MainForm.TabContent {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Loaded Profile Files.
+        /// </summary>
+        internal static string LoadedProfileFiles {
+            get {
+                return ResourceManager.GetString("LoadedProfileFiles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Open in File Explorer.
         /// </summary>
         internal static string OpenFileExplorer {

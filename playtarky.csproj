@@ -34,16 +34,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>TabContentResource.resx</DependentUpon>
     </Compile>
-    <Compile Update="Resources\Forms\MainForm\TabContent\LauncherInfoTabResource.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>LauncherInfoTabResource.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Resources\Forms\MainForm\TabContent\ServerInfoTabResource.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ServerInfoTabResource.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -62,14 +52,6 @@
     <EmbeddedResource Update="Resources\Forms\MainForm\TabContent\TabContentResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>TabContentResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Forms\MainForm\TabContent\LauncherInfoTabResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>LauncherInfoTabResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resources\Forms\MainForm\TabContent\ServerInfoTabResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ServerInfoTabResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

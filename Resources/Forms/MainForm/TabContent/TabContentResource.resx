@@ -138,6 +138,9 @@
   <data name="ListBoxHelper" xml:space="preserve">
     <value>Shift+Click / CTRL+Click to select multiple items. DEL to delete selected files.</value>
   </data>
+  <data name="LoadedProfileFiles" xml:space="preserve">
+    <value>Loaded Profile Files</value>
+  </data>
   <data name="OpenFileExplorer" xml:space="preserve">
     <value>Open in File Explorer</value>
   </data>

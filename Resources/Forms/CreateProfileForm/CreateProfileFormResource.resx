@@ -127,7 +127,7 @@
     <value>Fika Compatibility</value>
   </data>
   <data name="FikaHelp" xml:space="preserve">
-    <value>These options will allow fika versions to be displayed on the profile, have fika files included in the profile and be exported as a fika client for friends.</value>
+    <value>These options will allow fika versions to be displayed on the profile and the ability for the profile to be exported as a fika client package for friends using this app.</value>
   </data>
   <data name="FormTitle" xml:space="preserve">
     <value>Create New Profile</value>
@@ -135,10 +135,19 @@
   <data name="IsFikaHost" xml:space="preserve">
     <value>This Profile is a Fika Host</value>
   </data>
+  <data name="ProfileAlreadyExists" xml:space="preserve">
+    <value>The profile {0} already exists, do you wish to overwrite it?</value>
+  </data>
+  <data name="ProfileAlreadyExistsTitle" xml:space="preserve">
+    <value>Profile Already Exists</value>
+  </data>
   <data name="ProfileName" xml:space="preserve">
     <value>Profile Name</value>
   </data>
   <data name="UsesFika" xml:space="preserve">
     <value>This Profile Uses Fika</value>
+  </data>
+  <data name="ValidationFailedMsg" xml:space="preserve">
+    <value>The profile name is invalid. The profile name should contain 4 to 32 characters comprising letters, numbers, underscores, and hyphens only, starting with a letter or number only.</value>
   </data>
 </root>

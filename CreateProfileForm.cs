@@ -1,22 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿using playtarky.Resources.Forms.CreateProfileForm;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace playtarky
 {
     public partial class CreateProfileForm : Form
     {
-        //public const string GAME_DIR = @"C:\SPT\";
-        //public const string APP_PROFILES_DIR_PARTIAL = "ikaprofiler";
-        //public const string APP_PROFILES_DIR = $"{GAME_DIR}{APP_PROFILES_DIR_PARTIAL}";
         public Regex regex = new Regex(@"^[a-zA-Z0-9_-]{3,32}$");
+        public bool OverwriteExistingProfile = false;
 
         public CreateProfileForm()
         {
@@ -27,9 +17,14 @@ namespace playtarky
         {
             if (Validation(CP_ProfileName_txt.Text))
             {
+                //Return Data
+                ProfileName = CP_ProfileName_txt.Text.Trim();
+                UsesFika = CP_UsesFika_chk.Checked;
+                IsFikaHost = CP_IsFikaHost_chk.Checked;
+                IsOverwriteProfile = OverwriteExistingProfile;
+
                 // Set the DialogResult to OK before closing the form
                 this.DialogResult = DialogResult.OK;
-
                 // Close the form
                 this.Close();
             }
@@ -37,25 +32,38 @@ namespace playtarky
 
         private bool Validation(string inputVal)
         {
+            var isValid = false;
+            inputVal = inputVal.Trim();
             if (regex.IsMatch(inputVal))
             {
-                string folderPath = Path.Combine("APP_PROFILES_DIR", inputVal);
+                string filePath = Path.Combine(MainForm.APP_PROFILES_DIR, inputVal) + ".zip";
 
-                if (Directory.Exists(folderPath))
+                if (File.Exists(filePath))
                 {
-                    Console.WriteLine("Folder already exists in APP_PROFILES_DIR.");
+
+                    DialogResult result = MessageBox.Show(string.Format(CreateProfileFormResource.ProfileAlreadyExists, inputVal), CreateProfileFormResource.ProfileAlreadyExistsTitle, MessageBoxButtons.YesNo);
+                    if (result == DialogResult.Yes)
+                    {
+                        OverwriteExistingProfile = true;
+                        isValid = true;
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("Validation successful. Folder does not exist in APP_PROFILES_DIR.");
-                    return true;
+                    isValid = true;
                 }
             }
             else
             {
-                Console.WriteLine("Validation failed. The input value should contain 4 to 32 characters comprising letters, numbers, underscores, and hyphens only, starting with a letter or number only.");
+                MessageBox.Show(CreateProfileFormResource.ValidationFailedMsg);
             }
-            return false;
+            return isValid;
+        }
+
+        private void CP_UsesFika_chk_CheckedChanged(object sender, EventArgs e)
+        {
+            CP_IsFikaHost_chk.Enabled = CP_UsesFika_chk.Checked;
+            CP_IsFikaHost_chk.Checked = false;
         }
     }
 }

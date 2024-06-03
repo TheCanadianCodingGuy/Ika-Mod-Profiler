@@ -61,11 +61,47 @@ namespace playtarky.Resources.Forms.MainForm {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The profile {0} was created successfully. Would you like to make it your active profile now?.
+        /// </summary>
+        internal static string ActivateProfileText {
+            get {
+                return ResourceManager.GetString("ActivateProfileText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Activate Profile?.
+        /// </summary>
+        internal static string ActivateProfileTitle {
+            get {
+                return ResourceManager.GetString("ActivateProfileTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Active Profile.
         /// </summary>
         internal static string ActiveProfile {
             get {
                 return ResourceManager.GetString("ActiveProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The previously active profile {0} was not found. The application will continue without a profile..
+        /// </summary>
+        internal static string ActiveProfileMissingMsg {
+            get {
+                return ResourceManager.GetString("ActiveProfileMissingMsg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Active Profile Missing.
+        /// </summary>
+        internal static string ActiveProfileMissingTitle {
+            get {
+                return ResourceManager.GetString("ActiveProfileMissingTitle", resourceCulture);
             }
         }
         
@@ -142,6 +178,15 @@ namespace playtarky.Resources.Forms.MainForm {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No Active Profile Loaded.
+        /// </summary>
+        internal static string NoActiveProfileLoaded {
+            get {
+                return ResourceManager.GetString("NoActiveProfileLoaded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to No Profile Found.
         /// </summary>
         internal static string NoProfileFound {
@@ -160,11 +205,29 @@ namespace playtarky.Resources.Forms.MainForm {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No Profile Loaded.
+        ///   Looks up a localized string similar to The profile {0} is corrupted or missing and will not be loaded..
         /// </summary>
-        internal static string NoProfileLoaded {
+        internal static string ProfileCorruptedMsg {
             get {
-                return ResourceManager.GetString("NoProfileLoaded", resourceCulture);
+                return ResourceManager.GetString("ProfileCorruptedMsg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profile {0} Corrupted or Missing....
+        /// </summary>
+        internal static string ProfileCorruptedProgressMsg {
+            get {
+                return ResourceManager.GetString("ProfileCorruptedProgressMsg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profile Corrupted or Missing.
+        /// </summary>
+        internal static string ProfileCorruptedTitle {
+            get {
+                return ResourceManager.GetString("ProfileCorruptedTitle", resourceCulture);
             }
         }
         
@@ -174,6 +237,15 @@ namespace playtarky.Resources.Forms.MainForm {
         internal static string ProfileCreated {
             get {
                 return ResourceManager.GetString("ProfileCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profile {0} Successfully Loaded!.
+        /// </summary>
+        internal static string ProfileLoaded {
+            get {
+                return ResourceManager.GetString("ProfileLoaded", resourceCulture);
             }
         }
         

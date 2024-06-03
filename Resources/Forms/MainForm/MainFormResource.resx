@@ -117,8 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ActivateProfileText" xml:space="preserve">
+    <value>The profile {0} was created successfully. Would you like to make it your active profile now?</value>
+  </data>
+  <data name="ActivateProfileTitle" xml:space="preserve">
+    <value>Activate Profile?</value>
+  </data>
   <data name="ActiveProfile" xml:space="preserve">
     <value>Active Profile</value>
+  </data>
+  <data name="ActiveProfileMissingMsg" xml:space="preserve">
+    <value>The previously active profile {0} was not found. The application will continue without a profile.</value>
+  </data>
+  <data name="ActiveProfileMissingTitle" xml:space="preserve">
+    <value>Active Profile Missing</value>
   </data>
   <data name="CopyingFiles" xml:space="preserve">
     <value>Copying Files..</value>
@@ -144,17 +156,29 @@
   <data name="FikaServerStatusTitle" xml:space="preserve">
     <value>Fika Server Version:</value>
   </data>
+  <data name="NoActiveProfileLoaded" xml:space="preserve">
+    <value>No Active Profile Loaded</value>
+  </data>
   <data name="NoProfileFound" xml:space="preserve">
     <value>No Profile Found</value>
   </data>
   <data name="NoProfileFoundCreateQ" xml:space="preserve">
     <value>No profile has been found. Would you like to you create one with your current game data?</value>
   </data>
-  <data name="NoProfileLoaded" xml:space="preserve">
-    <value>No Profile Loaded</value>
+  <data name="ProfileCorruptedMsg" xml:space="preserve">
+    <value>The profile {0} is corrupted or missing and will not be loaded.</value>
+  </data>
+  <data name="ProfileCorruptedProgressMsg" xml:space="preserve">
+    <value>Profile {0} Corrupted or Missing...</value>
+  </data>
+  <data name="ProfileCorruptedTitle" xml:space="preserve">
+    <value>Profile Corrupted or Missing</value>
   </data>
   <data name="ProfileCreated" xml:space="preserve">
     <value>Profile {0} Created!</value>
+  </data>
+  <data name="ProfileLoaded" xml:space="preserve">
+    <value>Profile {0} Successfully Loaded!</value>
   </data>
   <data name="SPTNotFound" xml:space="preserve">
     <value>SPT install was not found in the current folder. Ikaprofile must be installed in the SPT directory. The application will now terminate.</value>

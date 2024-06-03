@@ -120,14 +120,347 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>505, 91</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 24</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="menu_file_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="menu_file_lbl.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="menu_openprofile_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="menu_openprofile_lbl.Text" xml:space="preserve">
+    <value>Open Profile...</value>
+  </data>
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>620, 91</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 490</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 22</value>
+  </data>
+  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="progressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 16</value>
+  </data>
+  <data name="progressStatusText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="spt_version_lbl.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="spt_version_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>679, 17</value>
+  </data>
+  <data name="spt_version_lbl.Text" xml:space="preserve">
+    <value>spt_version_lbl</value>
+  </data>
+  <data name="spt_version_lbl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_title.Name" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_title.Parent" xml:space="preserve">
+    <value>fm_tabs_control</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_title.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tab_usermod_title.Name" xml:space="preserve">
+    <value>tab_usermod_title</value>
+  </data>
+  <data name="&gt;&gt;tab_usermod_title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab_usermod_title.Parent" xml:space="preserve">
+    <value>fm_tabs_control</value>
+  </data>
+  <data name="&gt;&gt;tab_usermod_title.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tab_serverinfo_title.Name" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;tab_serverinfo_title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab_serverinfo_title.Parent" xml:space="preserve">
+    <value>fm_tabs_control</value>
+  </data>
+  <data name="&gt;&gt;tab_serverinfo_title.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tab_launcherinfo_title.Name" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;tab_launcherinfo_title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab_launcherinfo_title.Parent" xml:space="preserve">
+    <value>fm_tabs_control</value>
+  </data>
+  <data name="&gt;&gt;tab_launcherinfo_title.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tab_gameprofile_title.Name" xml:space="preserve">
+    <value>tab_gameprofile_title</value>
+  </data>
+  <data name="&gt;&gt;tab_gameprofile_title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab_gameprofile_title.Parent" xml:space="preserve">
+    <value>fm_tabs_control</value>
+  </data>
+  <data name="&gt;&gt;tab_gameprofile_title.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="fm_tabs_control.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 81</value>
+  </data>
+  <data name="fm_tabs_control.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 356</value>
+  </data>
+  <data name="fm_tabs_control.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fm_tabs_control.Name" xml:space="preserve">
+    <value>fm_tabs_control</value>
+  </data>
+  <data name="&gt;&gt;fm_tabs_control.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fm_tabs_control.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fm_tabs_control.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_info_btn.Name" xml:space="preserve">
+    <value>bep_tab_info_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_info_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_info_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_info_btn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportall_btn.Name" xml:space="preserve">
+    <value>bep_tab_exportall_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportall_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportall_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportall_btn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importselected_btn.Name" xml:space="preserve">
+    <value>bep_tab_importselected_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importselected_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importselected_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importselected_btn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_openprofilefile_btn.Name" xml:space="preserve">
+    <value>bep_tab_openprofilefile_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_openprofilefile_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_openprofilefile_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_openprofilefile_btn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_opengamefile_btn.Name" xml:space="preserve">
+    <value>bep_tab_opengamefile_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_opengamefile_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_opengamefile_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_opengamefile_btn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportselected_btn.Name" xml:space="preserve">
+    <value>bep_tab_exportselected_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportselected_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportselected_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportselected_btn.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importall_btn.Name" xml:space="preserve">
+    <value>bep_tab_importall_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importall_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importall_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importall_btn.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_refresh_btn.Name" xml:space="preserve">
+    <value>bep_tab_refresh_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_refresh_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_refresh_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_refresh_btn.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_profilefiles_lbl.Name" xml:space="preserve">
+    <value>tab_bep_profilefiles_lbl</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_profilefiles_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_profilefiles_lbl.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_profilefiles_lbl.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_gamefiles_lbl.Name" xml:space="preserve">
+    <value>tab_bep_gamefiles_lbl</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_gamefiles_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_gamefiles_lbl.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_gamefiles_lbl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_profilefiles_lbox.Name" xml:space="preserve">
+    <value>bep_tab_profilefiles_lbox</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_profilefiles_lbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_profilefiles_lbox.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_profilefiles_lbox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_gamefiles_lbox.Name" xml:space="preserve">
+    <value>bep_tab_gamefiles_lbox</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_gamefiles_lbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_gamefiles_lbox.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_gamefiles_lbox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="tab_bep_title.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tab_bep_title.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tab_bep_title.Size" type="System.Drawing.Size, System.Drawing">
+    <value>792, 328</value>
+  </data>
+  <data name="tab_bep_title.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tab_bep_title.Text" xml:space="preserve">
+    <value>BepInEx/plugins</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_title.Name" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_title.Parent" xml:space="preserve">
+    <value>fm_tabs_control</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_title.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="bep_tab_info_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="bep_tab_info_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        dAAAAHQBMYXlgQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE3SURBVDhPddNJ
+        cAAAAHABznhikwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE3SURBVDhPddNJ
         SgUxFEbhssFmE45VbHDkMhw5th2oQ98exAZF7Bej4h5U7BB0LCL2CnbnVKAkIfXDB7feI6nkJlVkMoht
         nOENLzjBOvpQm07s4hs3WMEsprGJS3xhC22I4uAjvGISTUjTDCd8wAGiSfbg4KHy6T8NzIeyyjDclqsq
         M4Af+OY097gLZZRxuJ1eH2zYLXLL7kF3KKO04AqrPpxj2SJJB0bgqeSyhmOLD8xZJHGvn/BUcpPM4NHC
@@ -136,8 +469,29 @@
         FH/pFknu6QDTsAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="bep_tab_info_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <data name="bep_tab_info_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>759, 39</value>
+  </data>
+  <data name="bep_tab_info_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="bep_tab_info_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_info_btn.Name" xml:space="preserve">
+    <value>bep_tab_info_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_info_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_info_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_info_btn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="bep_tab_exportall_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>175, 17</value>
   </metadata>
   <data name="bep_tab_exportall_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -150,8 +504,29 @@
         P4I/PG9VDkkAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="bep_tab_exportall_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>175, 17</value>
+  <data name="bep_tab_exportall_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 264</value>
+  </data>
+  <data name="bep_tab_exportall_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="bep_tab_exportall_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportall_btn.Name" xml:space="preserve">
+    <value>bep_tab_exportall_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportall_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportall_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportall_btn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="bep_tab_importselected_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>358, 17</value>
   </metadata>
   <data name="bep_tab_importselected_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -165,8 +540,29 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="bep_tab_importselected_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>358, 17</value>
+  <data name="bep_tab_importselected_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 86</value>
+  </data>
+  <data name="bep_tab_importselected_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="bep_tab_importselected_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importselected_btn.Name" xml:space="preserve">
+    <value>bep_tab_importselected_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importselected_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importselected_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importselected_btn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="bep_tab_openprofilefile_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>687, 54</value>
   </metadata>
   <data name="bep_tab_openprofilefile_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -179,8 +575,32 @@
         OpKvG+i+OMkievcXKSOPaYz5AbDuVFponpVVAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="bep_tab_openprofilefile_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>687, 54</value>
+  <data name="bep_tab_openprofilefile_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>707, 278</value>
+  </data>
+  <data name="bep_tab_openprofilefile_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="bep_tab_openprofilefile_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="bep_tab_openprofilefile_btn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_openprofilefile_btn.Name" xml:space="preserve">
+    <value>bep_tab_openprofilefile_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_openprofilefile_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_openprofilefile_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_openprofilefile_btn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="bep_tab_opengamefile_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 91</value>
   </metadata>
   <data name="bep_tab_opengamefile_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -193,8 +613,32 @@
         OpKvG+i+OMkievcXKSOPaYz5AbDuVFponpVVAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="bep_tab_opengamefile_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 91</value>
+  <data name="bep_tab_opengamefile_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>317, 278</value>
+  </data>
+  <data name="bep_tab_opengamefile_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="bep_tab_opengamefile_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="bep_tab_opengamefile_btn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_opengamefile_btn.Name" xml:space="preserve">
+    <value>bep_tab_opengamefile_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_opengamefile_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_opengamefile_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_opengamefile_btn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="bep_tab_exportselected_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>574, 17</value>
   </metadata>
   <data name="bep_tab_exportselected_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -208,8 +652,29 @@
         AElFTkSuQmCC
 </value>
   </data>
-  <metadata name="bep_tab_exportselected_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>574, 17</value>
+  <data name="bep_tab_exportselected_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 228</value>
+  </data>
+  <data name="bep_tab_exportselected_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="bep_tab_exportselected_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportselected_btn.Name" xml:space="preserve">
+    <value>bep_tab_exportselected_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportselected_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportselected_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportselected_btn.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="bep_tab_importall_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 54</value>
   </metadata>
   <data name="bep_tab_importall_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -222,8 +687,29 @@
         xiwBc9c/UUv+el0AAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="bep_tab_importall_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 54</value>
+  <data name="bep_tab_importall_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 50</value>
+  </data>
+  <data name="bep_tab_importall_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="bep_tab_importall_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importall_btn.Name" xml:space="preserve">
+    <value>bep_tab_importall_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importall_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importall_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importall_btn.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="bep_tab_refresh_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>202, 54</value>
   </metadata>
   <data name="bep_tab_refresh_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -236,11 +722,1523 @@
         yB1ewXYd+wrLSCQIfgHFd0MlBpYIowAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="bep_tab_refresh_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>202, 54</value>
-  </metadata>
+  <data name="bep_tab_refresh_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>759, 3</value>
+  </data>
+  <data name="bep_tab_refresh_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="bep_tab_refresh_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_refresh_btn.Name" xml:space="preserve">
+    <value>bep_tab_refresh_btn</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_refresh_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_refresh_btn.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_refresh_btn.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tab_bep_profilefiles_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tab_bep_profilefiles_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 18</value>
+  </data>
+  <data name="tab_bep_profilefiles_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 15</value>
+  </data>
+  <data name="tab_bep_profilefiles_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="tab_bep_profilefiles_lbl.Text" xml:space="preserve">
+    <value>Loaded Profile Files</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_profilefiles_lbl.Name" xml:space="preserve">
+    <value>tab_bep_profilefiles_lbl</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_profilefiles_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_profilefiles_lbl.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_profilefiles_lbl.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tab_bep_gamefiles_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tab_bep_gamefiles_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 18</value>
+  </data>
+  <data name="tab_bep_gamefiles_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 15</value>
+  </data>
+  <data name="tab_bep_gamefiles_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tab_bep_gamefiles_lbl.Text" xml:space="preserve">
+    <value>Game Files / Active Profile</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_gamefiles_lbl.Name" xml:space="preserve">
+    <value>tab_bep_gamefiles_lbl</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_gamefiles_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_gamefiles_lbl.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;tab_bep_gamefiles_lbl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="bep_tab_profilefiles_lbox.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="bep_tab_profilefiles_lbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 35</value>
+  </data>
+  <data name="bep_tab_profilefiles_lbox.ScrollAlwaysVisible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bep_tab_profilefiles_lbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 274</value>
+  </data>
+  <data name="bep_tab_profilefiles_lbox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_profilefiles_lbox.Name" xml:space="preserve">
+    <value>bep_tab_profilefiles_lbox</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_profilefiles_lbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_profilefiles_lbox.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_profilefiles_lbox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="bep_tab_gamefiles_lbox.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="bep_tab_gamefiles_lbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 35</value>
+  </data>
+  <data name="bep_tab_gamefiles_lbox.ScrollAlwaysVisible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bep_tab_gamefiles_lbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 274</value>
+  </data>
+  <data name="bep_tab_gamefiles_lbox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_gamefiles_lbox.Name" xml:space="preserve">
+    <value>bep_tab_gamefiles_lbox</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_gamefiles_lbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_gamefiles_lbox.Parent" xml:space="preserve">
+    <value>tab_bep_title</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_gamefiles_lbox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefile_lbl.Name" xml:space="preserve">
+    <value>user_tab_gamefile_lbl</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefile_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefile_lbl.Parent" xml:space="preserve">
+    <value>tab_usermod_title</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefile_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefiles_lbox.Name" xml:space="preserve">
+    <value>user_tab_gamefiles_lbox</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefiles_lbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefiles_lbox.Parent" xml:space="preserve">
+    <value>tab_usermod_title</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefiles_lbox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tab_usermod_title.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tab_usermod_title.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tab_usermod_title.Size" type="System.Drawing.Size, System.Drawing">
+    <value>792, 328</value>
+  </data>
+  <data name="tab_usermod_title.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tab_usermod_title.Text" xml:space="preserve">
+    <value>user/mods</value>
+  </data>
+  <data name="&gt;&gt;tab_usermod_title.Name" xml:space="preserve">
+    <value>tab_usermod_title</value>
+  </data>
+  <data name="&gt;&gt;tab_usermod_title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab_usermod_title.Parent" xml:space="preserve">
+    <value>fm_tabs_control</value>
+  </data>
+  <data name="&gt;&gt;tab_usermod_title.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="user_tab_gamefile_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="user_tab_gamefile_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 18</value>
+  </data>
+  <data name="user_tab_gamefile_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 15</value>
+  </data>
+  <data name="user_tab_gamefile_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="user_tab_gamefile_lbl.Text" xml:space="preserve">
+    <value>Game Files</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefile_lbl.Name" xml:space="preserve">
+    <value>user_tab_gamefile_lbl</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefile_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefile_lbl.Parent" xml:space="preserve">
+    <value>tab_usermod_title</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefile_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="user_tab_gamefiles_lbox.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="user_tab_gamefiles_lbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 36</value>
+  </data>
+  <data name="user_tab_gamefiles_lbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 214</value>
+  </data>
+  <data name="user_tab_gamefiles_lbox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefiles_lbox.Name" xml:space="preserve">
+    <value>user_tab_gamefiles_lbox</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefiles_lbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefiles_lbox.Parent" xml:space="preserve">
+    <value>tab_usermod_title</value>
+  </data>
+  <data name="&gt;&gt;user_tab_gamefiles_lbox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_chk.Name" xml:space="preserve">
+    <value>SI_logreq_chk</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_chk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_chk.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_chk.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_lbl.Name" xml:space="preserve">
+    <value>SI_logreq_lbl</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_lbl.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_txt.Name" xml:space="preserve">
+    <value>SI_wsdelay_txt</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_txt.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_txt.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_lbl.Name" xml:space="preserve">
+    <value>SI_wsdelay_lbl</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_lbl.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_lbl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_txt.Name" xml:space="preserve">
+    <value>SI_beport_txt</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_txt.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_txt.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_lbl.Name" xml:space="preserve">
+    <value>SI_beport_lbl</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_lbl.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_lbl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_txt.Name" xml:space="preserve">
+    <value>SI_beip_txt</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_txt.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_txt.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_lbl.Name" xml:space="preserve">
+    <value>SI_beip_lbl</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_lbl.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_lbl.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;SI_port_txt.Name" xml:space="preserve">
+    <value>SI_port_txt</value>
+  </data>
+  <data name="&gt;&gt;SI_port_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_port_txt.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_port_txt.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;SI_port_lbl.Name" xml:space="preserve">
+    <value>SI_port_lbl</value>
+  </data>
+  <data name="&gt;&gt;SI_port_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_port_lbl.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_port_lbl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_txt.Name" xml:space="preserve">
+    <value>SI_ip_txt</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_txt.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_txt.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_lbl.Name" xml:space="preserve">
+    <value>SI_ip_lbl</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_lbl.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_lbl.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="tab_serverinfo_title.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tab_serverinfo_title.Size" type="System.Drawing.Size, System.Drawing">
+    <value>792, 328</value>
+  </data>
+  <data name="tab_serverinfo_title.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tab_serverinfo_title.Text" xml:space="preserve">
+    <value>Server Info</value>
+  </data>
+  <data name="&gt;&gt;tab_serverinfo_title.Name" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;tab_serverinfo_title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab_serverinfo_title.Parent" xml:space="preserve">
+    <value>fm_tabs_control</value>
+  </data>
+  <data name="&gt;&gt;tab_serverinfo_title.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SI_logreq_chk.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SI_logreq_chk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 143</value>
+  </data>
+  <data name="SI_logreq_chk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="SI_logreq_chk.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_chk.Name" xml:space="preserve">
+    <value>SI_logreq_chk</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_chk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_chk.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_chk.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SI_logreq_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SI_logreq_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 143</value>
+  </data>
+  <data name="SI_logreq_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 15</value>
+  </data>
+  <data name="SI_logreq_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="SI_logreq_lbl.Text" xml:space="preserve">
+    <value>Log Requests</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_lbl.Name" xml:space="preserve">
+    <value>SI_logreq_lbl</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_lbl.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_logreq_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="SI_wsdelay_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 111</value>
+  </data>
+  <data name="SI_wsdelay_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 23</value>
+  </data>
+  <data name="SI_wsdelay_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_txt.Name" xml:space="preserve">
+    <value>SI_wsdelay_txt</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_txt.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_txt.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SI_wsdelay_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SI_wsdelay_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 114</value>
+  </data>
+  <data name="SI_wsdelay_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 15</value>
+  </data>
+  <data name="SI_wsdelay_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="SI_wsdelay_lbl.Text" xml:space="preserve">
+    <value>WebSocket Ping Delay (ms)</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_lbl.Name" xml:space="preserve">
+    <value>SI_wsdelay_lbl</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_lbl.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_wsdelay_lbl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="SI_beport_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>603, 40</value>
+  </data>
+  <data name="SI_beport_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 23</value>
+  </data>
+  <data name="SI_beport_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_txt.Name" xml:space="preserve">
+    <value>SI_beport_txt</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_txt.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_txt.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="SI_beport_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SI_beport_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 43</value>
+  </data>
+  <data name="SI_beport_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 15</value>
+  </data>
+  <data name="SI_beport_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="SI_beport_lbl.Text" xml:space="preserve">
+    <value>Backend Port</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_lbl.Name" xml:space="preserve">
+    <value>SI_beport_lbl</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_lbl.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_beport_lbl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="SI_beip_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>603, 11</value>
+  </data>
+  <data name="SI_beip_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 23</value>
+  </data>
+  <data name="SI_beip_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_txt.Name" xml:space="preserve">
+    <value>SI_beip_txt</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_txt.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_txt.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="SI_beip_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SI_beip_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 14</value>
+  </data>
+  <data name="SI_beip_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 15</value>
+  </data>
+  <data name="SI_beip_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="SI_beip_lbl.Text" xml:space="preserve">
+    <value>Backend IP</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_lbl.Name" xml:space="preserve">
+    <value>SI_beip_lbl</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_lbl.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_beip_lbl.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="SI_port_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 40</value>
+  </data>
+  <data name="SI_port_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 23</value>
+  </data>
+  <data name="SI_port_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;SI_port_txt.Name" xml:space="preserve">
+    <value>SI_port_txt</value>
+  </data>
+  <data name="&gt;&gt;SI_port_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_port_txt.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_port_txt.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="SI_port_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SI_port_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 43</value>
+  </data>
+  <data name="SI_port_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 15</value>
+  </data>
+  <data name="SI_port_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="SI_port_lbl.Text" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="&gt;&gt;SI_port_lbl.Name" xml:space="preserve">
+    <value>SI_port_lbl</value>
+  </data>
+  <data name="&gt;&gt;SI_port_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_port_lbl.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_port_lbl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="SI_ip_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 11</value>
+  </data>
+  <data name="SI_ip_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 23</value>
+  </data>
+  <data name="SI_ip_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_txt.Name" xml:space="preserve">
+    <value>SI_ip_txt</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_txt.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_txt.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="SI_ip_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SI_ip_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 14</value>
+  </data>
+  <data name="SI_ip_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 15</value>
+  </data>
+  <data name="SI_ip_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="SI_ip_lbl.Text" xml:space="preserve">
+    <value>IP test hehe</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_lbl.Name" xml:space="preserve">
+    <value>SI_ip_lbl</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_lbl.Parent" xml:space="preserve">
+    <value>tab_serverinfo_title</value>
+  </data>
+  <data name="&gt;&gt;SI_ip_lbl.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_txt.Name" xml:space="preserve">
+    <value>LI_defaultlocale_txt</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_txt.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_txt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_lbl.Name" xml:space="preserve">
+    <value>LI_defaultlocale_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_txt.Name" xml:space="preserve">
+    <value>LI_serverurl_txt</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_txt.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_txt.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_txt.Name" xml:space="preserve">
+    <value>LI_filepath_txt</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_txt.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_txt.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_txt.Name" xml:space="preserve">
+    <value>LI_servername_txt</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_txt.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_txt.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_chk.Name" xml:space="preserve">
+    <value>LI_firstrun_chk</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_chk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_chk.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_chk.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_lbl.Name" xml:space="preserve">
+    <value>LI_filepath_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_lbl.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_lbl.Name" xml:space="preserve">
+    <value>LI_serverurl_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_lbl.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_lbl.Name" xml:space="preserve">
+    <value>LI_servername_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_lbl.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_lbl.Name" xml:space="preserve">
+    <value>LI_firstrun_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_lbl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_chk.Name" xml:space="preserve">
+    <value>LI_useAutoLogin_chk</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_chk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_chk.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_chk.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;LI_password_txt.Name" xml:space="preserve">
+    <value>LI_password_txt</value>
+  </data>
+  <data name="&gt;&gt;LI_password_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_password_txt.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_password_txt.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;LI_password_lbl.Name" xml:space="preserve">
+    <value>LI_password_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_password_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_password_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_password_lbl.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;LI_username_txt.Name" xml:space="preserve">
+    <value>LI_username_txt</value>
+  </data>
+  <data name="&gt;&gt;LI_username_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_username_txt.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_username_txt.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;LI_username_lbl.Name" xml:space="preserve">
+    <value>LI_username_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_username_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_username_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_username_lbl.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_lbl.Name" xml:space="preserve">
+    <value>LI_useAutoLogin_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_lbl.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="tab_launcherinfo_title.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tab_launcherinfo_title.Size" type="System.Drawing.Size, System.Drawing">
+    <value>792, 328</value>
+  </data>
+  <data name="tab_launcherinfo_title.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tab_launcherinfo_title.Text" xml:space="preserve">
+    <value>Launcher Info</value>
+  </data>
+  <data name="&gt;&gt;tab_launcherinfo_title.Name" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;tab_launcherinfo_title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab_launcherinfo_title.Parent" xml:space="preserve">
+    <value>fm_tabs_control</value>
+  </data>
+  <data name="&gt;&gt;tab_launcherinfo_title.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="LI_defaultlocale_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>603, 40</value>
+  </data>
+  <data name="LI_defaultlocale_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 23</value>
+  </data>
+  <data name="LI_defaultlocale_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_txt.Name" xml:space="preserve">
+    <value>LI_defaultlocale_txt</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_txt.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_txt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LI_defaultlocale_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LI_defaultlocale_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 43</value>
+  </data>
+  <data name="LI_defaultlocale_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 15</value>
+  </data>
+  <data name="LI_defaultlocale_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="LI_defaultlocale_lbl.Text" xml:space="preserve">
+    <value>Default Locale</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_lbl.Name" xml:space="preserve">
+    <value>LI_defaultlocale_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_defaultlocale_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LI_serverurl_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 184</value>
+  </data>
+  <data name="LI_serverurl_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 23</value>
+  </data>
+  <data name="LI_serverurl_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_txt.Name" xml:space="preserve">
+    <value>LI_serverurl_txt</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_txt.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_txt.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LI_filepath_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 133</value>
+  </data>
+  <data name="LI_filepath_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 23</value>
+  </data>
+  <data name="LI_filepath_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_txt.Name" xml:space="preserve">
+    <value>LI_filepath_txt</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_txt.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_txt.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="LI_servername_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>603, 69</value>
+  </data>
+  <data name="LI_servername_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 23</value>
+  </data>
+  <data name="LI_servername_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_txt.Name" xml:space="preserve">
+    <value>LI_servername_txt</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_txt.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_txt.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="LI_firstrun_chk.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LI_firstrun_chk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>603, 14</value>
+  </data>
+  <data name="LI_firstrun_chk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="LI_firstrun_chk.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_chk.Name" xml:space="preserve">
+    <value>LI_firstrun_chk</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_chk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_chk.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_chk.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="LI_filepath_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LI_filepath_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 115</value>
+  </data>
+  <data name="LI_filepath_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 15</value>
+  </data>
+  <data name="LI_filepath_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="LI_filepath_lbl.Text" xml:space="preserve">
+    <value>Game Path</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_lbl.Name" xml:space="preserve">
+    <value>LI_filepath_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_filepath_lbl.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="LI_serverurl_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LI_serverurl_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 166</value>
+  </data>
+  <data name="LI_serverurl_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 15</value>
+  </data>
+  <data name="LI_serverurl_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="LI_serverurl_lbl.Text" xml:space="preserve">
+    <value>Server Url</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_lbl.Name" xml:space="preserve">
+    <value>LI_serverurl_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_serverurl_lbl.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="LI_servername_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LI_servername_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 72</value>
+  </data>
+  <data name="LI_servername_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 15</value>
+  </data>
+  <data name="LI_servername_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="LI_servername_lbl.Text" xml:space="preserve">
+    <value>Server Name</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_lbl.Name" xml:space="preserve">
+    <value>LI_servername_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_servername_lbl.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="LI_firstrun_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LI_firstrun_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 14</value>
+  </data>
+  <data name="LI_firstrun_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 15</value>
+  </data>
+  <data name="LI_firstrun_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="LI_firstrun_lbl.Text" xml:space="preserve">
+    <value>First Run Setup</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_lbl.Name" xml:space="preserve">
+    <value>LI_firstrun_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_firstrun_lbl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="LI_useAutoLogin_chk.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LI_useAutoLogin_chk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 14</value>
+  </data>
+  <data name="LI_useAutoLogin_chk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="LI_useAutoLogin_chk.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_chk.Name" xml:space="preserve">
+    <value>LI_useAutoLogin_chk</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_chk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_chk.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_chk.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="LI_password_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 69</value>
+  </data>
+  <data name="LI_password_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 23</value>
+  </data>
+  <data name="LI_password_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;LI_password_txt.Name" xml:space="preserve">
+    <value>LI_password_txt</value>
+  </data>
+  <data name="&gt;&gt;LI_password_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_password_txt.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_password_txt.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="LI_password_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LI_password_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 72</value>
+  </data>
+  <data name="LI_password_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 15</value>
+  </data>
+  <data name="LI_password_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="LI_password_lbl.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;LI_password_lbl.Name" xml:space="preserve">
+    <value>LI_password_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_password_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_password_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_password_lbl.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="LI_username_txt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 40</value>
+  </data>
+  <data name="LI_username_txt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 23</value>
+  </data>
+  <data name="LI_username_txt.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;LI_username_txt.Name" xml:space="preserve">
+    <value>LI_username_txt</value>
+  </data>
+  <data name="&gt;&gt;LI_username_txt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_username_txt.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_username_txt.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="LI_username_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LI_username_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 43</value>
+  </data>
+  <data name="LI_username_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 15</value>
+  </data>
+  <data name="LI_username_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="LI_username_lbl.Text" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="&gt;&gt;LI_username_lbl.Name" xml:space="preserve">
+    <value>LI_username_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_username_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_username_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_username_lbl.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="LI_useAutoLogin_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LI_useAutoLogin_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 14</value>
+  </data>
+  <data name="LI_useAutoLogin_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 15</value>
+  </data>
+  <data name="LI_useAutoLogin_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="LI_useAutoLogin_lbl.Text" xml:space="preserve">
+    <value>Use Auto Login</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_lbl.Name" xml:space="preserve">
+    <value>LI_useAutoLogin_lbl</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_lbl.Parent" xml:space="preserve">
+    <value>tab_launcherinfo_title</value>
+  </data>
+  <data name="&gt;&gt;LI_useAutoLogin_lbl.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefile_lbl.Name" xml:space="preserve">
+    <value>profile_tab_gamefile_lbl</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefile_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefile_lbl.Parent" xml:space="preserve">
+    <value>tab_gameprofile_title</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefile_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefiles_lbox.Name" xml:space="preserve">
+    <value>profile_tab_gamefiles_lbox</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefiles_lbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefiles_lbox.Parent" xml:space="preserve">
+    <value>tab_gameprofile_title</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefiles_lbox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tab_gameprofile_title.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tab_gameprofile_title.Size" type="System.Drawing.Size, System.Drawing">
+    <value>792, 328</value>
+  </data>
+  <data name="tab_gameprofile_title.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tab_gameprofile_title.Text" xml:space="preserve">
+    <value>Game Profiles</value>
+  </data>
+  <data name="&gt;&gt;tab_gameprofile_title.Name" xml:space="preserve">
+    <value>tab_gameprofile_title</value>
+  </data>
+  <data name="&gt;&gt;tab_gameprofile_title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tab_gameprofile_title.Parent" xml:space="preserve">
+    <value>fm_tabs_control</value>
+  </data>
+  <data name="&gt;&gt;tab_gameprofile_title.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="profile_tab_gamefile_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="profile_tab_gamefile_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 18</value>
+  </data>
+  <data name="profile_tab_gamefile_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 15</value>
+  </data>
+  <data name="profile_tab_gamefile_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="profile_tab_gamefile_lbl.Text" xml:space="preserve">
+    <value>Game Files</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefile_lbl.Name" xml:space="preserve">
+    <value>profile_tab_gamefile_lbl</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefile_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefile_lbl.Parent" xml:space="preserve">
+    <value>tab_gameprofile_title</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefile_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="profile_tab_gamefiles_lbox.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="profile_tab_gamefiles_lbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 36</value>
+  </data>
+  <data name="profile_tab_gamefiles_lbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 214</value>
+  </data>
+  <data name="profile_tab_gamefiles_lbox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefiles_lbox.Name" xml:space="preserve">
+    <value>profile_tab_gamefiles_lbox</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefiles_lbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefiles_lbox.Parent" xml:space="preserve">
+    <value>tab_gameprofile_title</value>
+  </data>
+  <data name="&gt;&gt;profile_tab_gamefiles_lbox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="serverHttpConfigurationFileBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>227, 91</value>
+  </metadata>
+  <data name="fika_client_status_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fika_client_status_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>728, 440</value>
+  </data>
+  <data name="fika_client_status_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 15</value>
+  </data>
+  <data name="fika_client_status_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="fika_client_status_lbl.Text" xml:space="preserve">
+    <value>Not Found</value>
+  </data>
+  <data name="&gt;&gt;fika_client_status_lbl.Name" xml:space="preserve">
+    <value>fika_client_status_lbl</value>
+  </data>
+  <data name="&gt;&gt;fika_client_status_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fika_client_status_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fika_client_status_lbl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="fika_server_status_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fika_server_status_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>395, 440</value>
+  </data>
+  <data name="fika_server_status_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 15</value>
+  </data>
+  <data name="fika_server_status_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="fika_server_status_lbl.Text" xml:space="preserve">
+    <value>Not Found</value>
+  </data>
+  <data name="&gt;&gt;fika_server_status_lbl.Name" xml:space="preserve">
+    <value>fika_server_status_lbl</value>
+  </data>
+  <data name="&gt;&gt;fika_server_status_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fika_server_status_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fika_server_status_lbl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>610, 440</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 15</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Fika Server Version:</value>
+  </data>
+  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>283, 440</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 15</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Fika Client Version:</value>
+  </data>
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="bep_tab_openprofilefile_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>687, 54</value>
+  </metadata>
+  <metadata name="bep_tab_opengamefile_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 91</value>
   </metadata>
   <metadata name="bep_list_helper_2_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>375, 54</value>
@@ -248,4 +2246,196 @@
   <metadata name="bep_list_helper_1_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>531, 54</value>
   </metadata>
+  <metadata name="bep_tab_refresh_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>202, 54</value>
+  </metadata>
+  <metadata name="bep_tab_exportall_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>175, 17</value>
+  </metadata>
+  <metadata name="bep_tab_importselected_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>358, 17</value>
+  </metadata>
+  <metadata name="bep_tab_exportselected_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>574, 17</value>
+  </metadata>
+  <metadata name="bep_tab_importall_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 54</value>
+  </metadata>
+  <metadata name="bep_tab_info_btn_tt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="mf_activeprofile_title_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mf_activeprofile_title_lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="mf_activeprofile_title_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 36</value>
+  </data>
+  <data name="mf_activeprofile_title_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 15</value>
+  </data>
+  <data name="mf_activeprofile_title_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="mf_activeprofile_title_lbl.Text" xml:space="preserve">
+    <value>Active Profile</value>
+  </data>
+  <data name="&gt;&gt;mf_activeprofile_title_lbl.Name" xml:space="preserve">
+    <value>mf_activeprofile_title_lbl</value>
+  </data>
+  <data name="&gt;&gt;mf_activeprofile_title_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mf_activeprofile_title_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mf_activeprofile_title_lbl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="mf_activeprofile_msg_lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mf_activeprofile_msg_lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 51</value>
+  </data>
+  <data name="mf_activeprofile_msg_lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 15</value>
+  </data>
+  <data name="mf_activeprofile_msg_lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="mf_activeprofile_msg_lbl.Text" xml:space="preserve">
+    <value>No Active Profile Loaded</value>
+  </data>
+  <data name="&gt;&gt;mf_activeprofile_msg_lbl.Name" xml:space="preserve">
+    <value>mf_activeprofile_msg_lbl</value>
+  </data>
+  <data name="&gt;&gt;mf_activeprofile_msg_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mf_activeprofile_msg_lbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mf_activeprofile_msg_lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 512</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>playtarky</value>
+  </data>
+  <data name="&gt;&gt;menu_file_lbl.Name" xml:space="preserve">
+    <value>menu_file_lbl</value>
+  </data>
+  <data name="&gt;&gt;menu_file_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menu_openprofile_lbl.Name" xml:space="preserve">
+    <value>menu_openprofile_lbl</value>
+  </data>
+  <data name="&gt;&gt;menu_openprofile_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBar.Name" xml:space="preserve">
+    <value>progressBar</value>
+  </data>
+  <data name="&gt;&gt;progressBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripProgressBar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressStatusText.Name" xml:space="preserve">
+    <value>progressStatusText</value>
+  </data>
+  <data name="&gt;&gt;progressStatusText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;spt_version_lbl.Name" xml:space="preserve">
+    <value>spt_version_lbl</value>
+  </data>
+  <data name="&gt;&gt;spt_version_lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;serverHttpConfigurationFileBindingSource.Name" xml:space="preserve">
+    <value>serverHttpConfigurationFileBindingSource</value>
+  </data>
+  <data name="&gt;&gt;serverHttpConfigurationFileBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_openprofilefile_btn_tt.Name" xml:space="preserve">
+    <value>bep_tab_openprofilefile_btn_tt</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_openprofilefile_btn_tt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_opengamefile_btn_tt.Name" xml:space="preserve">
+    <value>bep_tab_opengamefile_btn_tt</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_opengamefile_btn_tt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_list_helper_2_tt.Name" xml:space="preserve">
+    <value>bep_list_helper_2_tt</value>
+  </data>
+  <data name="&gt;&gt;bep_list_helper_2_tt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_list_helper_1_tt.Name" xml:space="preserve">
+    <value>bep_list_helper_1_tt</value>
+  </data>
+  <data name="&gt;&gt;bep_list_helper_1_tt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_refresh_btn_tt.Name" xml:space="preserve">
+    <value>bep_tab_refresh_btn_tt</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_refresh_btn_tt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportall_btn_tt.Name" xml:space="preserve">
+    <value>bep_tab_exportall_btn_tt</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportall_btn_tt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importselected_btn_tt.Name" xml:space="preserve">
+    <value>bep_tab_importselected_btn_tt</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importselected_btn_tt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportselected_btn_tt.Name" xml:space="preserve">
+    <value>bep_tab_exportselected_btn_tt</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_exportselected_btn_tt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importall_btn_tt.Name" xml:space="preserve">
+    <value>bep_tab_importall_btn_tt</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_importall_btn_tt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_info_btn_tt.Name" xml:space="preserve">
+    <value>bep_tab_info_btn_tt</value>
+  </data>
+  <data name="&gt;&gt;bep_tab_info_btn_tt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
